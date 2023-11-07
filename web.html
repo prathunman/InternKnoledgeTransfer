@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist//output.css"/>
     <title>Log in</title>
 </head>
-<body>
-    <div>
-        <h1>Login here</h1>
+<body class="h-screen flex">
+    <div class="space-y-12 mt-28">
+        <div>
+            <h1 class="text-blue-600 text-4xl text-center font-bold">Login here</h1>
+        </div>
+        <div>
+            <form action="" method="" class="space-y-12 ml-20">
+                <div class="text-xl">
+                    <label name="email">Email*</label>
+                    <div>
+                        <input type="email" name="email" class="border-b-2 outline-none"/>
+                    </div>
+                </div>
+                <div class="text-xl">
+                    <label name="password">Password*</label>
+                    <div>
+                        <input type="email" name="email" class="border-b-2 outline-none"/>
+                    </div>
+                </div class="text-xl">
+                <div class="text-xl">
+                    <button type="submit" class="border-2 border-yellow-400 px-4 py-2 hover:bg-yellow-200">Submit</button>
+                </div>   
+            </form>
+        </div>
     </div>
-    <div>
-        <form action="" method="">
-            <div>
-                <label name="email">Email*</label>
-                <input type="email" name="email"/>
-            </div>
-            <div>
-                <label name="password">Password*</label>
-                <input type="email" name="email"/>
-            </div>
-            <input type="submit"/>
     
-        </form>
-    </div>
 </body>
 </html>
