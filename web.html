@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist//output.css"/>
     <title>Log in</title>
+    <script type="module" src="./index.js"></script>
 </head>
 <body class="h-screen flex">
     <div class="w-1/2 flex items-center justify-center ">
@@ -15,17 +16,18 @@
             <h1 class="text-violet-700 text-4xl text-center font-bold">Login here</h1>
         </div>
         <div>
-            <form action="" method="" class="space-y-12 ml-20">
+            <div class="text-lg font-medium text-center text-red-600" id="error"></div>
+            <form action="" method="post" class="space-y-12 ml-20" id="form">
                 <div class="space-y-2">
                     <label name="email" class="text-violet-500 text-xl font-semibold">Email*</label>
                     <div>
-                        <input type="email" name="email" placeholder="Enter your email address" class="border-b-2 outline-none w-96"/>
+                        <input type="email" name="email" placeholder="Enter your email address" class="border-b-2 outline-none w-96" id="email"/>
                     </div>
                 </div>
                 <div class="space-y-2">
                     <label name="password" class="text-violet-500 text-xl font-semibold">Password*</label>
                     <div>
-                        <input type="password" name="password" placeholder="Enter your password" class="border-b-2 outline-none w-96"/>
+                        <input type="password" name="password" placeholder="Enter your password" class="border-b-2 outline-none w-96" id="password"/>
                     </div>
                 </div class="text-xl">
                 <div class="text-xl">
