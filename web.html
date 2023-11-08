@@ -3,25 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist//output.css"/>
     <title>Log in</title>
 </head>
-<body>
-    <div>
-        <h1>Login here</h1>
+<body class="h-screen flex">
+    <div class="w-1/2 flex items-center justify-center ">
+        <embed src="./resoureces/login.png" alt="login" class="w-96 h-96"/>
     </div>
-    <div>
-        <form action="" method="">
-            <div>
-                <label name="email">Email*</label>
-                <input type="email" name="email"/>
-            </div>
-            <div>
-                <label name="password">Password*</label>
-                <input type="email" name="email"/>
-            </div>
-            <input type="submit"/>
-    
-        </form>
+    <div class="w-1/2 space-y-12 mt-28">
+        <div>
+            <h1 class="text-violet-700 text-4xl text-center font-bold">Login here</h1>
+        </div>
+        <div>
+            <form action="" method="" class="space-y-12 ml-20">
+                <div class="space-y-2">
+                    <label name="email" class="text-violet-500 text-xl font-semibold">Email*</label>
+                    <div>
+                        <input type="email" name="email" placeholder="Enter your email address" class="border-b-2 outline-none w-96"/>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label name="password" class="text-violet-500 text-xl font-semibold">Password*</label>
+                    <div>
+                        <input type="email" name="email" placeholder="Enter your password" class="border-b-2 outline-none w-96"/>
+                    </div>
+                </div class="text-xl">
+                <div class="text-xl">
+                    <span>
+                        <button type="submit" class="border-2 border-purple-600 px-4 py-2 hover:bg-purple-200 rounded-xl">Login</button>
+                    </span>
+                    <span>
+                        <a href="#" class="text-lg text-violet-500 ml-4 hover:text-purple-700">sign up</a>
+                    </span>
+                </div>   
+            </form>
+        </div>
     </div>
 </body>
 </html>
